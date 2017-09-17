@@ -6,7 +6,9 @@ from flask import jsonify
 from flask import jsonify,make_response
 from flask import Flask
 from flask import request
+from flask_cors import CORS
 app = Flask(__name__)
+CORS(app)
 
 
 @app.route("/info")
