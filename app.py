@@ -18,7 +18,7 @@ def info():
     name = request.args.get('name')
     name.replace(" ", "")
     region = request.args.get('region')
-    api_key = "RGAPI-a275da5a-9969-43f2-a535-def54e304b22"
+    api_key = "RGAPI-e72bdf8b-074a-41bb-a48f-c1bf5e91809a"
     api_url = "https://" + region + ".api.riotgames.com/lol/summoner/v3/summoners/by-name/" + name + "?api_key=" + api_key 
     response = requests.get(api_url)
     summ_id = json.dumps(response.json()['id'])
